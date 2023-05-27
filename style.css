@@ -1,0 +1,61 @@
+body{
+    background-image: url("flag-italy.jpg");
+    background-size: contain;
+    opacity: 1;
+    text-align: center;
+    border: 3px dashed purple;
+  }
+  
+  .center {
+    text-align: center;
+   }
+  
+  
+  
+  img {
+    height: 250px;
+    width: 459px;
+    background-color: #7effc8;
+  }
+  
+  .title {
+    color: #ffce88;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  #article-title {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffce88;
+  }
+  
+  
+  h1{
+    font-size: 36px;
+  }
+  
+  
+  .description{
+    font-size: 25px;
+  }
+  
+  #beginning{
+    color:#8a96ee;
+  }
+  
+  #information{
+   color:#76a5af; 
+  }
+  
+  #favorites{
+  color:#a99a96;  
+  }
+  
+  
+  a{
+    color:#134f5c;
+  }
+  
+ 

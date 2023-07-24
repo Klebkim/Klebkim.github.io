@@ -48,7 +48,7 @@
 <!--Starting Total-->
 <h1>Total cost</h1>
 <h1 id = "cost-text">0</h1>
-<img src="" onclick = "costFunction()"><img>
+
 <script>
   var totalCost = 0
   function costFunction(){
@@ -68,7 +68,7 @@
 <script>
 
     var burgerCount = 0
-    const burgerCost = 1
+    const burgerCost = 799.99
    
    
 
@@ -84,9 +84,11 @@ el.innerText = burgerCount;
 <img src="https://th.bing.com/th/id/OIP.pGgMuOrs1sK6q0_qSpVl9QHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "friesFunction()"></img>
 <script>
    var friesCount= 0
+   const friesCost = 499.99
  function friesFunction(){
   var el =document.getElementById("fries-text")
 friesCount ++
+totalCost += friesCount
 el.innerText = friesCount;
     }
 </script>
@@ -95,9 +97,11 @@ el.innerText = friesCount;
 <img src="https://th.bing.com/th/id/OIP.PezvVMSF4TDKn87xjTK56AHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "sandwichesFunction()"></img>
 <script>
    var sandwichesCount = 0
+   const sandwichesCost = 749.99
  function sandwichesFunction(){
   var el =document.getElementById("sandwiches-text")
 sandwichesCount ++
+totalCost += sandwichesCount
 el.innerText = sandwichesCount;
     }
 </script>
@@ -106,9 +110,11 @@ el.innerText = sandwichesCount;
 <img src="https://th.bing.com/th/id/OIP.p98lZIeecrViu5oTO6RLuQAAAA?pid=ImgDet&rs=1"onclick = "nuggetsFunction()"></img>
 <script>
   var nuggetsCount = 0
+  const nuggetsCost = 499.99
  function nuggetsFunction(){
   var el =document.getElementById("nuggets-text")
 nuggetsCount ++
+totalCost += nuggetsCount
 el.innerText = nuggetsCount;
     }
 </script>
@@ -117,9 +123,11 @@ el.innerText = nuggetsCount;
 <img src="https://th.bing.com/th/id/OIP.FjmwckUP8yYu8vdwUrvP8gHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "happymealFunction()"></img>
 <script>
   var happymealCount = 0
+  const happymealCost = 999.99
  function happymealFunction(){
   var el =document.getElementById("happymeal-text")
 happymealCount ++
+totalCost += happymealCount
 el.innerText = happymealCount;
     }
 </script>

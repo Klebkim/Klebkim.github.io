@@ -50,10 +50,10 @@
 <h1 id = "cost-text">0</h1>
 <img src="" onclick = "costFunction()"><img>
 <script>
-  var totalCount = 0
+  var totalCost = 0
   function costFunction(){
     var el = document.getElementById("cost-text")
-    totalCount ++
+    totalCost ++
     el.innerText = burgerCount + friesCount;
   }
 </script>
@@ -68,12 +68,14 @@
 <script>
 
     var burgerCount = 0
+    const burgerCost = 1
    
    
 
     function burgerFunction() {
       var el =document.getElementById("burger-text")
   burgerCount ++
+  totalCost += burgerCost
 el.innerText = burgerCount;
     }
 </script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="number2.css">
+  </head>
+<body style="background-color:red;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">McDonald Trumps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Burgers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fries</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Drinks
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Soda</a></li>
+              <li><a class="dropdown-item" href="#">Coffee</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Smoothie</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--Starting Total-->
+<h1>Total cost</h1>
+<h1 id = "cost-text">0</h1>
+<img src="" onclick = "costFunction()"><img>
+<script>
+  var totalCount = 0
+  function costFunction(){
+    var el = document.getElementById("cost-text")
+    totalCount ++
+    el.innerText = burgerCount + friesCount;
+  }
+</script>
+
+
+
+  <h1>Burgers</h1>
+ <h1 id = "burger-text"> 0</h1>
+
+
+<img src="https://th.bing.com/th/id/OIP.6VUbZ68roVtLR62ap_59dAHaFc?w=267&h=196&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "burgerFunction()"></img>
+<script>
+
+    var burgerCount = 0
+   
+   
+
+    function burgerFunction() {
+      var el =document.getElementById("burger-text")
+  burgerCount ++
+el.innerText = burgerCount;
+    }
+</script>
+<h1>Fries</h1>
+<h1 id = "fries-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.pGgMuOrs1sK6q0_qSpVl9QHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "friesFunction()"></img>
+<script>
+   var friesCount= 0
+ function friesFunction(){
+  var el =document.getElementById("fries-text")
+friesCount ++
+el.innerText = friesCount;
+    }
+</script>
+<h1>Sandwiches</h1>
+<h1 id = "sandwiches-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.PezvVMSF4TDKn87xjTK56AHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "sandwichesFunction()"></img>
+<script>
+   var sandwichesCount = 0
+ function sandwichesFunction(){
+  var el =document.getElementById("sandwiches-text")
+sandwichesCount ++
+el.innerText = sandwichesCount;
+    }
+</script>
+<h1>Nuggets</h1>
+<h1 id = "nuggets-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.p98lZIeecrViu5oTO6RLuQAAAA?pid=ImgDet&rs=1"onclick = "nuggetsFunction()"></img>
+<script>
+  var nuggetsCount = 0
+ function nuggetsFunction(){
+  var el =document.getElementById("nuggets-text")
+nuggetsCount ++
+el.innerText = nuggetsCount;
+    }
+</script>
+<h1>Happy Meal</h1>
+<h1 id = "happymeal-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.FjmwckUP8yYu8vdwUrvP8gHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "happymealFunction()"></img>
+<script>
+  var happymealCount = 0
+ function happymealFunction(){
+  var el =document.getElementById("happymeal-text")
+happymealCount ++
+el.innerText = happymealCount;
+    }
+</script>
+</body>
+</html>
+

@@ -77,6 +77,7 @@
   burgerCount ++
   totalCost += burgerCost
 el.innerText = burgerCount;
+costFunction()
     }
 </script>
 <h1>Fries</h1>
@@ -88,8 +89,9 @@ el.innerText = burgerCount;
  function friesFunction(){
   var el =document.getElementById("fries-text")
 friesCount ++
-totalCost += friesCount
+totalCost += friesCost
 el.innerText = friesCount;
+costFunction()
     }
 </script>
 <h1>Sandwiches</h1>
@@ -101,8 +103,9 @@ el.innerText = friesCount;
  function sandwichesFunction(){
   var el =document.getElementById("sandwiches-text")
 sandwichesCount ++
-totalCost += sandwichesCount
+totalCost += sandwichesCost
 el.innerText = sandwichesCount;
+costFunction()
     }
 </script>
 <h1>Nuggets</h1>
@@ -114,8 +117,9 @@ el.innerText = sandwichesCount;
  function nuggetsFunction(){
   var el =document.getElementById("nuggets-text")
 nuggetsCount ++
-totalCost += nuggetsCount
+totalCost += nuggetsCost
 el.innerText = nuggetsCount;
+costFunction()
     }
 </script>
 <h1>Happy Meal</h1>
@@ -128,7 +132,8 @@ el.innerText = nuggetsCount;
   var el =document.getElementById("happymeal-text")
 happymealCount ++
 totalCost += happymealCount
-el.innerText = happymealCount;
+el.innerText = happymealCount
+costFunction()
     }
 </script>
 </body>

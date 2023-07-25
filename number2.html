@@ -76,19 +76,18 @@
     // cost function
   function costFunction(){
     var el = document.getElementById("cost-text")
-    totalCost ++
-    el.innerText = burgerCount + friesCount;
+    el.innerText = "$" + totalCost * 1.0825;
   }
 
    // burger function 
     var burgerCount = 0
     const burgerCost = 799.99
     function burgerFunction() {
-      var el =document.getElementById("burger-text")
-  burgerCount ++
-  totalCost += burgerCost
-el.innerText = burgerCount;
-costFunction()
+        var el =document.getElementById("burger-text")
+        burgerCount ++
+        totalCost += burgerCost
+        el.innerText = burgerCount;
+        costFunction()
     }
 
     // fries function

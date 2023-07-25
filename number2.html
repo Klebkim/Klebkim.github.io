@@ -49,29 +49,40 @@
 <h1>Total cost</h1>
 <h1 id = "cost-text">0</h1>
 
-<script>
-  var totalCost = 0
-  function costFunction(){
-    var el = document.getElementById("cost-text")
-    totalCost ++
-    el.innerText = burgerCount + friesCount;
-  }
-</script>
-
-
-
   <h1>Burgers</h1>
  <h1 id = "burger-text"> 0</h1>
 
 
 <img src="https://th.bing.com/th/id/OIP.6VUbZ68roVtLR62ap_59dAHaFc?w=267&h=196&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "burgerFunction()"></img>
-<script>
 
+<h1>Fries</h1>
+<h1 id = "fries-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.pGgMuOrs1sK6q0_qSpVl9QHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "friesFunction()"></img>
+
+<h1>Sandwiches</h1>
+<h1 id = "sandwiches-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.PezvVMSF4TDKn87xjTK56AHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "sandwichesFunction()"></img>
+
+<h1>Nuggets</h1>
+<h1 id = "nuggets-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.p98lZIeecrViu5oTO6RLuQAAAA?pid=ImgDet&rs=1"onclick = "nuggetsFunction()"></img>
+
+<h1>Happy Meal</h1>
+<h1 id = "happymeal-text">0</h1>
+<img src="https://th.bing.com/th/id/OIP.FjmwckUP8yYu8vdwUrvP8gHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "happymealFunction()"></img>
+<script>
+  var totalCost = 0
+
+    // cost function
+  function costFunction(){
+    var el = document.getElementById("cost-text")
+    totalCost ++
+    el.innerText = burgerCount + friesCount;
+  }
+
+   // burger function 
     var burgerCount = 0
     const burgerCost = 799.99
-   
-   
-
     function burgerFunction() {
       var el =document.getElementById("burger-text")
   burgerCount ++
@@ -79,12 +90,9 @@
 el.innerText = burgerCount;
 costFunction()
     }
-</script>
-<h1>Fries</h1>
-<h1 id = "fries-text">0</h1>
-<img src="https://th.bing.com/th/id/OIP.pGgMuOrs1sK6q0_qSpVl9QHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.4&pid=1.7" onclick = "friesFunction()"></img>
-<script>
-   var friesCount= 0
+
+    // fries function
+     var friesCount= 0
    const friesCost = 499.99
  function friesFunction(){
   var el =document.getElementById("fries-text")
@@ -93,25 +101,8 @@ totalCost += friesCost
 el.innerText = friesCount;
 costFunction()
     }
-</script>
-<h1>Sandwiches</h1>
-<h1 id = "sandwiches-text">0</h1>
-<img src="https://th.bing.com/th/id/OIP.PezvVMSF4TDKn87xjTK56AHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "sandwichesFunction()"></img>
-<script>
-   var sandwichesCount = 0
-   const sandwichesCost = 749.99
- function sandwichesFunction(){
-  var el =document.getElementById("sandwiches-text")
-sandwichesCount ++
-totalCost += sandwichesCost
-el.innerText = sandwichesCount;
-costFunction()
-    }
-</script>
-<h1>Nuggets</h1>
-<h1 id = "nuggets-text">0</h1>
-<img src="https://th.bing.com/th/id/OIP.p98lZIeecrViu5oTO6RLuQAAAA?pid=ImgDet&rs=1"onclick = "nuggetsFunction()"></img>
-<script>
+
+    // nuggets function
   var nuggetsCount = 0
   const nuggetsCost = 499.99
  function nuggetsFunction(){
@@ -121,11 +112,8 @@ totalCost += nuggetsCost
 el.innerText = nuggetsCount;
 costFunction()
     }
-</script>
-<h1>Happy Meal</h1>
-<h1 id = "happymeal-text">0</h1>
-<img src="https://th.bing.com/th/id/OIP.FjmwckUP8yYu8vdwUrvP8gHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"onclick = "happymealFunction()"></img>
-<script>
+
+    // happy meal function
   var happymealCount = 0
   const happymealCost = 999.99
  function happymealFunction(){
@@ -133,6 +121,17 @@ costFunction()
 happymealCount ++
 totalCost += happymealCount
 el.innerText = happymealCount
+costFunction()
+    }
+
+    // sandwich function
+       var sandwichesCount = 0
+   const sandwichesCost = 749.99
+ function sandwichesFunction(){
+  var el =document.getElementById("sandwiches-text")
+sandwichesCount ++
+totalCost += sandwichesCost
+el.innerText = sandwichesCount;
 costFunction()
     }
 </script>

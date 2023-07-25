@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat Generator</title>
+<link rel="stylesheet" href="goat.css">
+</head>
+<body>
+    <h1>Welcome to my Goat generator</h1>
+    <button id="the-button" onclick="showPicture()">Click me for some goat</button>
+<img src="https://wallpapercave.com/wp/wp6362208.jpg" alt="" id="the-picture">
+  <script>
+    function showPicture() {
+        let myElement = document.getElementById("the-picture");
+        myElement.style.display= "block"; 
+    }
+     
+    </script>
+    <button id="the-second-button" onclick="showPicture2()">Click me for another goat</button>
+ <img src="https://wallpapercave.com/wp/wp7765171.jpg" alt="" id="the-second-picture">
+ <script>
+    function showPicture2() {
+        let myElement = document.getElementById("the-second-picture");
+        myElement.style.display="block";
+    }
+ </script>
+
+<button id="the-third-button" onclick="showPicture3()">Click me for another goat</button>
+<img src="https://images7.alphacoders.com/990/990090.jpg" alt="" id="the-third-picture">
+<script>
+   function showPicture3() {
+       let myElement = document.getElementById("the-third-picture");
+       myElement.style.display="block";
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    border: 3px dashed aquamarine;
+    color:lightgreen
+    
+}
+form-label{
+    color: lightgreen;
+}
+html{
+    text-align: center;
+    opacity: 1;
+    font-size: 15px;
+}
+#submit{
+    color:aqua
+}

@@ -1,0 +1,200 @@
+#rectangle{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle:hover{
+    background-color: #c5ffec;
+    
+}
+#one-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle p:hover{
+    color:darkcyan
+}
+#rectangle2{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle2:hover{
+    background-color: #c5ffec;
+    
+}
+#two-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle2 p:hover{
+    color:darkcyan
+}
+
+#rectangle3{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle3:hover{
+    background-color: #c5ffec;
+    
+}
+#three-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle3 p:hover{
+    color:darkcyan
+}
+
+#rectangle4{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle4:hover{
+    background-color: #c5ffec;
+    
+}
+#four-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle4 p:hover{
+    color:darkcyan
+}
+#rectangle5{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle5:hover{
+    background-color: #c5ffec;
+    
+}
+#five-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle5 p:hover{
+    color:darkcyan
+}
+#rectangle6{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle6:hover{
+    background-color: #c5ffec;
+    
+}
+#six-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle6 p:hover{
+    color:darkcyan
+}
+
+#rectangle7{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle7:hover{
+    background-color: #c5ffec;
+    
+}
+#seven-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle7 p:hover{
+    color:darkcyan
+}
+
+#rectangle8{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle8:hover{
+    background-color: #c5ffec;
+    
+}
+#eight-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle8 p:hover{
+    color:darkcyan
+}
+
+#rectangle9{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle9:hover{
+    background-color: #c5ffec;
+    
+}
+#nine-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle9 p:hover{
+    color:darkcyan
+}
+
+#rectangle10{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle10:hover{
+    background-color: #c5ffec;
+    
+}
+#ten-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle10 p:hover{
+    color:darkcyan
+}
+.container{
+    display:flex;
+
+}

@@ -1,0 +1,44 @@
+body{
+    background-color:darkseagreen;
+}
+#container{
+
+    height: 1006px;
+    width:1006px;
+    border-width: 1px;
+    border-style:solid;
+}
+.box{
+        height:200px;
+        width: 200px;
+        border-width:1px;
+        border-style:solid;
+        border-color:white;
+}
+.row{
+    display:flex;
+}
+#red-player{
+    height:25px;
+    width: 25px;
+}
+#blue-player{
+    height:25px;
+    width: 25px;
+
+}
+#yellow-player{
+    height:25px;
+    width: 25px;
+}
+#green-player{
+    height:25px;
+    width: 25px;
+}
+.snakes{
+    height:200px
+}
+#ladders{
+    height:200px;
+    width: 150px;
+}

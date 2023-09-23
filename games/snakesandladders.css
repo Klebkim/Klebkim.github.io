@@ -15,30 +15,100 @@ body{
         border-style:solid;
         border-color:white;
 }
+.box-text{
+    
+    font-size: 40px;
+    position:absolute;
+    margin-top: 75px;
+    margin-left:90px;
+}
 .row{
     display:flex;
 }
-#red-player{
+#p1{
+    position:absolute;
+    top:10px;
+    left:10px;
     height:25px;
     width: 25px;
 }
-#blue-player{
+#p2{
+    position:absolute;
+    top:35px;
+    left:10px;
     height:25px;
     width: 25px;
 
 }
-#yellow-player{
+#p3{
+    position:absolute;
+    top:60px;
+    left:10px;
     height:25px;
     width: 25px;
-}
-#green-player{
-    height:25px;
-    width: 25px;
+
 }
 .snakes{
-    height:200px
+    height:130px
 }
 #ladders{
     height:200px;
     width: 150px;
 }
+#pink-snake{
+    position: absolute;
+  top: 130px;
+  left: 675px;
+}
+#purple-snake{
+    position: absolute;
+    top:500px;
+    left:220px;
+    height:450px;
+    width:75px;
+}
+#green-snake{
+    position:absolute;
+    top: 500px;
+    left:750px;
+    height:400px;
+    width:75px;
+}
+#ladder1{
+    position:absolute;
+    top: 150px;
+    left: 420px;
+    height:400px;
+    width: 75px;
+}
+#ladder2{
+    position:absolute;
+    top: 520px;
+    left: 20px;
+    height:400px;
+    width: 75px;
+}
+#ladder3{
+    position:absolute;
+    top: 320px;
+    left: 950px;
+    height:200px;
+    width: 75px;
+}
+#diceBtn {
+    z-index: 99;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(75, 140, 197);
+    border-radius: 5px;
+    width: 200px;
+  }
+  #diceCont {
+    display: flex;
+    place-items: none;
+    border: 2px solid red;
+  }
+  #diceBtn {
+    width: 200px;
+    margin-left: 20px;
+  }

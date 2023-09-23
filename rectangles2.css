@@ -1,4 +1,10 @@
+body{
+    background-color: skyblue;
+}
 #rectangle{
+    position:absolute;
+    top: 100px;
+    left: 50px;
     width:100px;
     height:50px;
     border-style: solid;
@@ -18,6 +24,9 @@
     color:darkcyan
 }
 #rectangle2{
+    position:absolute;
+    top: 100px;
+    left: 200px;
     width:100px;
     height:50px;
     border-style: solid;
@@ -38,6 +47,9 @@
 }
 
 #rectangle3{
+    position:absolute;
+    top: 100px;
+    left: 350px;
     width:100px;
     height:50px;
     border-style: solid;
@@ -58,6 +70,9 @@
 }
 
 #rectangle4{
+    position:absolute;
+    top: 100px;
+    left: 500px;
     width:100px;
     height:50px;
     border-style: solid;
@@ -77,6 +92,9 @@
     color:darkcyan
 }
 #rectangle5{
+    position:absolute;
+    top: 250px;
+    left: 50px;
     width:100px;
     height:50px;
     border-style: solid;
@@ -95,28 +113,142 @@
 #rectangle5 p:hover{
     color:darkcyan
 }
-
+#rectangle6{
+    position:absolute;
+    top: 250px;
+    left: 200px;
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle6:hover{
+    background-color: #c5ffec;
+    
+}
+#six-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle6 p:hover{
+    color:darkcyan
+}
+#rectangle7{
+    position:absolute;
+    top: 250px;
+    left: 350px;
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle7:hover{
+    background-color: #c5ffec;
+    
+}
+#seven-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangl7 p:hover{
+    color:darkcyan
+}
+#rectangle8{
+    position:absolute;
+    top: 250px;
+    left: 500px;
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-width:4px;
+    border-color:aquamarine;
+}
+#rectangle8:hover{
+    background-color: #c5ffec;
+    
+}
+#eight-button{
+    text-align: center;
+    font-size:x-large
+    
+}
+#rectangle8 p:hover{
+    color:darkcyan
+}
 .container{
     display:flex;
 
 }
 #the-picture{
-    width:80px;
-    height:120px;
+    display:none;
+    position:absolute;
+    top: 150px;
+    left: 75px;
+    width:50px;
+    height:60px;
 }
 #the2-picture{
-    width:320px;
-    height:240px;
+    display:none;
+    position:absolute;
+    top: 150px;
+    left: 225px;
+    width:50px;
+    height:60px;
 }
 #the3-picture{
-    width:160px;
-    height:240px;
+    display:none;
+    position:absolute;
+    top: 150px;
+    left: 375px;
+    width:50px;
+    height:60px;
 }
 #the4-picture{
-    width: 200px;
-    height:240px;
+    display:none;
+    position:absolute;
+    top: 150px;
+    left: 525px;
+    width: 50px;
+    height:60px;
 }
 #the5-picture{
-    width: 200px;px;
-    height:240px;
+    display:none;
+    position:absolute;
+    top: 300px;
+    left: 75px;
+    width: 50px;
+    height:60px;
+}
+#the6-picture{
+    display:none;
+    position:absolute;
+    top: 300px;
+    left: 225px;
+    width: 50px;
+    height:60px;
+}
+#the7-picture{
+    display:none;
+    position:absolute;
+    top: 300px;
+    left: 375px;
+    width: 50px;
+    height:60px;
+}
+#the8-picture{
+    display:none;
+    position:absolute;
+    top: 300px;
+    left: 525px;
+    width: 50px;
+    height:60px;
+}
+h2{
+    position:absolute;
+    top: 400px;
+
 }

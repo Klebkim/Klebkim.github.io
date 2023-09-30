@@ -64,35 +64,35 @@ body{
 }
 #purple-snake{
     position: absolute;
-    top:700px;
+    top:250px;
     left:220px;
     height:450px;
     width:75px;
 }
 #green-snake{
     position:absolute;
-    top: 700px;
+    top: 600px;
     left:750px;
     height:500px;
     width:75px;
 }
 #ladder1{
     position:absolute;
-    top: 350px;
+    top: 285px;
     left: 420px;
     height:400px;
     width: 75px;
 }
 #ladder2{
     position:absolute;
-    top: 720px;
+    top: 670px;
     left: 20px;
     height:400px;
     width: 75px;
 }
 #ladder3{
     position:absolute;
-    top: 520px;
+    top: 470px;
     left: 950px;
     height:200px;
     width: 75px;
@@ -214,7 +214,9 @@ color:#d687eb
     background-color: #000000;
     color:#ffffff
 }
-h1{
+#title{
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Courier New', Courier, monospace;
     color:aliceblue;
     font-size: 50px;

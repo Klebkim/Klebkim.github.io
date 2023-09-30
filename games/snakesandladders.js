@@ -1,114 +1,99 @@
-let tog = 1
-p1sum = 0
-p2sum = 0
-function play(player, p1sum, correction, num){
-    let sum
-    if(psum == 'p1sum') {
 
-        p1sum = p1sum + num;
-        if (p1sum > 25){
-            p1sum = p1sum - num
+var p1_square = 1;
+var p1_element = document.getElementById("p1");
+var p2_square = 1;
+var p2_element = document.getElementById("p2");
+var itsP1Turn = true;
+var gameOver = false;
+const square_to_column = {
+    1: 5,
+    2: 4,
+    3: 3,
+    4: 2,
+    5: 1,
+    6: 1,
+    7: 2,
+    8: 3,
+    9: 4,
+    10: 5,
+    11: 5,
+    12: 4,
+    13: 3,
+    14: 2,
+    15: 1,
+    16: 1,
+    17: 2,
+    18: 3,
+    19: 4,
+    20: 5,
+    21: 5,
+    22: 4,
+    23: 3,
+    24: 2,
+    25: 1
+}
+function calculateCoordinates(squareNumber){
+    if (!gameOver){
+ // let's find the row
+ let rowNumber = square = Math.ceil(squareNumber / 5) - 1;
+ rowNumber = 5 - rowNumber;
+ let topPixels = (rowNumber * 200);
+ let colNumber = square_to_column[squareNumber] - 1;
+ let leftPixels = (colNumber * 200) + 100;
+ if (itsP1Turn) {
+    leftPixels -= 20;
+    p1_element.style.top = topPixels + "px";
+    p1_element.style.left = leftPixels + "px";
+ }
+ else{
+    p2_element.style.top = topPixels + "px";
+    p2_element.style.left = leftPixels + "px";
+    }
+    }   
+}
+function move(diceNumber) {
+    if (gameOver) {
+        return;
+    }
+    if (itsP1Turn){
+        p1_square += diceNumber;
+        if (p1_square >= 25){
+            victory();
         }
-        if (p1sum ==  3){
-            p1sum = 13
+    calculateCoordinates(p1_square);
+    }
+    else{
+        p2_square += diceNumber;
+        if (p2_square >= 25){
+            victory();
         }
-        if (p1sum ==  11){
-            p1sum = 21
-        }
-        if (p1sum ==  6){
-            p1sum = 15
-        }
-        if (p1sum ==  8){
-            p1sum = 4
-        }
-        if (p1sum ==  12){
-            p1sum = 22
-        }
-        if (p1sum ==  14){
-            p1sum = 24
-        }
+        calculateCoordinates(p2_square)
+        
+    }
+    itsP1Turn = !itsP1Turn;
+}
+function victory(){
+    gameOver = true;
+    let titleDiv = document.getElementById("title")
+    if (itsP1Turn) {
+        titleDiv.innerText = "Player 1 won!"
+    }
+    else{
+        titleDiv.innerText = "Player 2 won!"
     }
 }
-    function play(player, p2sum, correction, num){
-    if(psum == 'p2sum') {
 
-        p2sum = p2sum + num;
-        if (p2sum > 25){
-            p2sum = p2sum - num
-        }
-        if (p2sum ==  3){
-            p2sum = 13
-        }
-        if (p2sum ==  11){
-            p2sum = 21
-        }
-        if (p2sum ==  6){
-            p2sum = 15
-        }
-        if (p2sum ==  8){
-            p2sum = 4
-        }
-        if (p2sum ==  12){
-            p2sum = 22
-        }
-        if (p2sum ==  14){
-            p2sum = 24
-        }
-    }
-
-    
+document.getElementById("diceBtn").addEventListener(
+    "click", 
+function () {
+     let num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+   move(num);
+   let turnText = document.getElementById("tog");
+   if (itsP1Turn) {
+    turnText.innerText = "Red's Turn: "
+   }
+   else{
+    turnText.innerText = "Blue's Turn: "
+   }
 }
-function play(player, p3sum, correction, num){
-    if(psum == 'p3sum') {
-
-        p3sum = p3sum + num;
-        if (p3sum > 25){
-            p3sum = p3sum - num
-        }
-        if (p3sum ==  3){
-            p3sum = 13
-        }
-        if (p3sum ==  11){
-            p3sum = 21
-        }
-        if (p3sum ==  6){
-            p3sum = 15
-        }
-        if (p3sum ==  8){
-            p3sum = 4
-        }
-        if (p3sum ==  12){
-            p3sum = 22
-        }
-        if (p3sum ==  14){
-            p3sum = 24
-        }
-    }
-
-}    
-document.getElementById("diceBtn").addEventListener("click", function () {
-      num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
-    document.getElementById("dice").innerText = num
-    function TurnFunction(){
-    if (tog % 3 == 2) {
-        document.getElementById('tog').innerText = "Player 1's Turn : "
-        play('p1', 'p1sum', 0, num)
-
-    }
-
-    if (tog % 3 == 1) {
-        document.getElementById('tog').innerText = "Player 2's Turn : "
-
-        play('p2', 'p2sum', 55, num)
-
-    }
-    if (tog % 3 == 0) {
-        document.getElementById('tog').innerText = "Player 3's Turn : "
-
-        play('p3', 'p3sum', 55, num)
-
-    }
-
-    tog = tog + 1
-}
-})
+)

@@ -5,6 +5,11 @@ var p2_square = 1;
 var p2_element = document.getElementById("p2");
 var itsP1Turn = true;
 var gameOver = false;
+
+
+
+
+
 const square_to_column = {
     1: 5,
     2: 4,
@@ -51,6 +56,42 @@ function calculateCoordinates(squareNumber){
     }
     }   
 }
+if(p1_square == 5){
+    p1_square += 10;
+}
+else if(p1_square == 11){
+    p1_square += 9;
+}
+else if(p1_square == 12){
+    p1_square -= 10;
+}   
+else if(p1_square == 22){
+    p1_square -= 3;
+}
+else if(p1_square == 13){
+    p1_square += 10;
+}
+else if(p1_square == 24){
+    p1_square -= 10;
+}
+if(p2_square == 5){
+    p2_square += 10;
+}
+else if(p2_square == 11){
+    p2_square += 9;
+}
+else if(p2_square == 12){
+    p2_square -= 10;
+}   
+else if(p2_square == 22){
+    p2_square -= 3;
+}
+else if(p2_square == 13){
+    p2_square += 10;
+}
+else if(p2_square == 24){
+    p2_square -= 10;
+}
 function move(diceNumber) {
     if (gameOver) {
         return;
@@ -85,10 +126,11 @@ function victory(){
 
 document.getElementById("diceBtn").addEventListener(
     "click", 
+    
 function () {
      let num = Math.floor(Math.random() * (6 - 1 + 1) + 1);
    move(num);
-   let turnText = document.getElementById("tog");
+   let turnText = document.getElementById("num");
    if (itsP1Turn) {
     turnText.innerText = "Red's Turn: "
    }

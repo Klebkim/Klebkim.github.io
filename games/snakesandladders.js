@@ -56,7 +56,9 @@ function calculateCoordinates(squareNumber){
     }
     }   
 }
-if(p1_square == 5){
+function snakesOrLadders(){
+//For p1_square
+    if(p1_square == 5){
     p1_square += 10;
 }
 else if(p1_square == 11){
@@ -74,6 +76,7 @@ else if(p1_square == 13){
 else if(p1_square == 24){
     p1_square -= 10;
 }
+//For p2_square
 if(p2_square == 5){
     p2_square += 10;
 }
@@ -92,22 +95,27 @@ else if(p2_square == 13){
 else if(p2_square == 24){
     p2_square -= 10;
 }
+}
 function move(diceNumber) {
     if (gameOver) {
         return;
     }
     if (itsP1Turn){
         p1_square += diceNumber;
-        if (p1_square >= 25){
+        if (p1_square > 25){
+            p1_square == 25;
             victory();
         }
+        snakesOrLadders();
     calculateCoordinates(p1_square);
     }
     else{
         p2_square += diceNumber;
-        if (p2_square >= 25){
+        if (p2_square > 25){
+            p2_square == 25;
             victory();
         }
+        snakesOrLadders();
         calculateCoordinates(p2_square)
         
     }
@@ -115,12 +123,17 @@ function move(diceNumber) {
 }
 function victory(){
     gameOver = true;
+    
     let titleDiv = document.getElementById("title")
     if (itsP1Turn) {
+        p1_square == 25;
         titleDiv.innerText = "Player 1 won!"
     }
     else{
+    p2_square == 25;
         titleDiv.innerText = "Player 2 won!"
+ 
+        move(diceNumber);
     }
 }
 

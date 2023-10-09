@@ -102,7 +102,7 @@ function move(diceNumber) {
     }
     if (itsP1Turn){
         p1_square += diceNumber;
-        if (p1_square > 25){
+        if (p1_square >= 25){
             p1_square == 25;
             victory();
         }
@@ -111,7 +111,7 @@ function move(diceNumber) {
     }
     else{
         p2_square += diceNumber;
-        if (p2_square > 25){
+        if (p2_square >= 25){
             p2_square == 25;
             victory();
         }
@@ -126,15 +126,15 @@ function victory(){
     
     let titleDiv = document.getElementById("title")
     if (itsP1Turn) {
-        p1_square == 25;
+        }
         titleDiv.innerText = "Player 1 won!"
+    
+    if (itsP2Turn){
     }
-    else{
-    p2_square == 25;
         titleDiv.innerText = "Player 2 won!"
  
         move(diceNumber);
-    }
+    
 }
 
 document.getElementById("diceBtn").addEventListener(

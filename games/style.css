@@ -1,0 +1,16 @@
+body{
+    background-color:darkseagreen;
+    
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    border: 3px dashed aquamarine;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    font-size: large;
+    border: 3px dashed aquamarine;
+}

@@ -101,23 +101,27 @@ function move(diceNumber) {
         return;
     }
     if (itsP1Turn){
+        
         p1_square += diceNumber;
         if (p1_square >= 25){
             p1_square == 25;
-            victory();
         }
         snakesOrLadders();
-    calculateCoordinates(p1_square);
+        calculateCoordinates(p1_square);
+        if(p1_square>= 25){
+            victory();
+        }
     }
     else{
         p2_square += diceNumber;
         if (p2_square >= 25){
             p2_square == 25;
-            victory();
         }
         snakesOrLadders();
-        calculateCoordinates(p2_square)
-        
+        calculateCoordinates(p2_square);
+        if(p2_square>= 25){
+            victory();
+        }
     }
     itsP1Turn = !itsP1Turn;
 }
@@ -126,7 +130,8 @@ function victory(){
     
     let titleDiv = document.getElementById("title")
     if (itsP1Turn) {
-        }
+        
+    }
         titleDiv.innerText = "Player 1 won!"
     
     if (itsP2Turn){
@@ -145,10 +150,10 @@ function () {
    move(num);
    let turnText = document.getElementById("num");
    if (itsP1Turn) {
-    turnText.innerText = "Red's Turn: "
+    turnText.innerText = "Red's Turn:" + num;
    }
    else{
-    turnText.innerText = "Blue's Turn: "
+    turnText.innerText = "Blue's Turn: " + num;
    }
 }
 )

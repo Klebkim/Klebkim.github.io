@@ -1,0 +1,13 @@
+.container{
+    background-color:aquamarine
+}
+
+.text-center{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(32, 0, 193)}
+
+.container{
+    border: 24px;
+    border-style: groove;
+    border-color: rgb(75, 44, 7);
+}

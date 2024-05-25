@@ -1,6 +1,6 @@
 body{
     background-color:darkseagreen;
-    
+     text-align: center;
 }
 
 h1{
@@ -13,4 +13,10 @@ p{
     color: antiquewhite;
     font-size: large;
     border: 3px dashed aquamarine;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    font-size: large;
+    border: 3px dashed antiquewhite;
 }

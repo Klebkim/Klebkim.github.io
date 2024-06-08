@@ -1,1 +1,28 @@
+body{
+    background-color:lightcyan;
+     text-align: center;
+}
 
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:mediumaquamarine;
+    border: 3px dashed aquamarine;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+    font-size: large;
+    border: 3px dashed aquamarine;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color:slateblue;
+    font-size: large;
+    border: 3px dashed slateblue;
+}
+link{
+    font-family: 'Courier New', Courier, monospace;
+    color:darkblue;
+    font-size:larger;
+    border: 3px dashed darkblue;
+}

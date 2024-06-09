@@ -1,26 +1,26 @@
 var questionNum = 1;
 var slytherinScore = 0;
-var ravenclawScore = 0;
+var ravenClawScore = 0;
 var gryffindorScore = 0;
 var hufflepuffScore = 0;
 function updateQuestionNum(){
-let qNum = document.getElementById("q-num")
-    qNum.innerText = questionNum;
+let qNum = document.getElementById("q-num");
+qNum.innerText = questionNum;
 
 }
-function updateslytherinScore(){
+function updateSlytherinScore(){
 
     slytherinScore ++;
 }
-function updateravenclawScore(){
+function updateRavenCawScore(){
 
-    ravenclawScore ++;
+ravenclawScore ++;
     }
-function updategryffindorScore(){
+function updateGryffindorScore(){
 
-    gryffindorScore ++;
+gryffindorScore ++;
 }
-function updatehufflepuffScore(){
+function updateHufflepuffScore(){
 
-    hufflepuffscore ++;
+ hufflepuffscore ++;
 }

@@ -10,17 +10,17 @@ qNum.innerText = questionNum;
 }
 function updateSlytherinScore(){
 
-    slytherinScore +=1;
+    slytherinScore ++;
 }
 function updateRavenCawScore(){
 
-ravenclawScore +=2;
+ravenclawScore ++;
     }
 function updateGryffindorScore(){
 
-gryffindorScore +=3;
+gryffindorScore ++;
 }
 function updateHufflepuffScore(){
 
- hufflepuffscore +=4;
+ hufflepuffscore ++;
 }
